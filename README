@@ -1,0 +1,40 @@
+CPSC 350-01
+Assignment Number: 4
+
+1.) Identifying Information
+
+a. Wyatt Miller
+b. Sutdent ID: 2302376
+c. Chapman email: wymiller@chapman.edu
+
+2.) List of source files submitted
+a. main.cpp
+b. DoublyLinkedList.cpp
+c. DoublyLinkedList.h
+d. ListNode.cpp
+e. ListNode.h
+f. GenQueue.cpp
+g. GenQueue.h
+h. t.txt
+i. p
+j. Makefile
+k. assignment4.exe
+
+
+
+3.) Description of any know compile/runtime errors, or bugs
+a. No errors
+b. I made my program function really well, I was able to add into the windows, into the lines, take
+from the lines etc... I could not end up figuring out the window idle times. That was the only part
+that tripped me up 
+
+4.) References used to complete the assignment
+a. https://www.geeksforgeeks.org/sort-c-stl/
+b. http://nmacun.com/doubly-linkedlist-implementation/
+c. Lucas Torti
+
+
+5.) Instructions for running the assignment
+1. type "make" into terminal
+2. run assignment4.exe
+3. When reading a file make sure it is in the same directory
