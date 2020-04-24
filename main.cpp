@@ -127,11 +127,11 @@ int main(int argc, char **argv){
 //code to configure when windows are idle
       if (wQ->getSize() < windows){
 
-        cout << "printing the Window Idle Queue at time: "<< time<< endl;
+        // cout << "printing the Window Idle Queue at time: "<< time<< endl;
 
         windowLoop = windows - wQ->getSize();
 
-        cout << "THE AMOUNT OF WINDOWS OPEN ARE: "<< windowLoop<< endl;
+        // cout << "THE AMOUNT OF WINDOWS OPEN ARE: "<< windowLoop<< endl;
 
 //adding for only when windows were idle to start, not when the open back up
         if (idle->getSize()>0){
@@ -142,8 +142,8 @@ int main(int argc, char **argv){
         for (int v = 1; v<= windowLoop; ++v){
           idle->insertQueue(time);
         }
-        cout << "here is the windows that are idle and their time" <<endl;
-        idle->printQueue();
+        // cout << "here is the windows that are idle and their time" <<endl;
+        // idle->printQueue();
       }
 
 //editting the students wait times based on how much time has gone by
@@ -188,8 +188,8 @@ int main(int argc, char **argv){
         windowQ = wQ->getSize();
         lineAdder = windows-windowQ;
 
-        cout << "here is the line before we add from the line at time: "<< time<< endl;
-        studLine->printQueue();
+        // cout << "here is the line before we add from the line at time: "<< time<< endl;
+        // studLine->printQueue();
         //adding the students into the windows + how long they waited in line
         for (int c = 1; c<= lineAdder; ++c){
           adder = studLine->peek();
@@ -206,8 +206,8 @@ int main(int argc, char **argv){
 
           }
         }
-        cout << "here is the window line after we add from the line at time: "<< time<< endl;
-        wQ->printQueue();
+        // cout << "here is the window line after we add from the line at time: "<< time<< endl;
+        // wQ->printQueue();
       }
 // dealing with what happens when all the windows arent occupied
       if (wQ->getSize() < windows){
@@ -225,8 +225,8 @@ int main(int argc, char **argv){
             pp->insertQueue(numbers);
             low->insertQueue(numbers);
           }
-          cout << "window line when windows arent full "<< time<< endl;
-          wQ->printQueue();
+          // cout << "window line when windows arent full "<< time<< endl;
+          // wQ->printQueue();
 
           j++;
           if (j<students){
@@ -242,11 +242,11 @@ int main(int argc, char **argv){
         if (j<students){
           continue;
         }
-        cout << "the line when windows are full "<< time<< endl;
-        studLine->printQueue();
+        // cout << "the line when windows are full "<< time<< endl;
+        // studLine->printQueue();
 
-        cout << "window line when windows are full "<< time<< endl;
-        wQ->printQueue();
+        // cout << "window line when windows are full "<< time<< endl;
+        // wQ->printQueue();
 //if all students were taken care of
       }else if (wQ->getSize()==0 && studLine->getSize()==0){
         cout << "All of the students have been taken care of"<< endl;
@@ -310,7 +310,7 @@ for (int x = 1; x <= theSize ; x++){
     ++overTen;
   }
 }
-cout << "meanpeak: "<< meanPeek<< endl;
+// cout << "meanpeak: "<< meanPeek<< endl;
 mean = addMe/theSize;
 
 
@@ -330,8 +330,8 @@ if (wQ->getSize()>0){
     idle->removeQueue();
     idle->insertQueue(bigNum);
   }
-cout << "here is the window idle queue"<<endl;
-  idle->printQueue();
+// cout << "here is the window idle queue"<<endl;
+//   idle->printQueue();
 
 }
 
@@ -389,11 +389,5 @@ cout << "The mean window idle time is: "<< Windmean<< endl;
 cout << "The longest window idle time is: "<< longestIdle<< endl;
 cout << "The amount of windows idle for more than 5 minutes is: "<< windcounter<< endl;
 cout << " " << endl;
-
-
-
-
-
-
 
 }
